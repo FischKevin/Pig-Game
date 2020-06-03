@@ -1,6 +1,6 @@
 button {
     position: absolute;
-    font-size: 15px;
+    font-size: 20px;
     padding: 5px 10px;
     border-radius: 10px;
     background: white;
@@ -10,14 +10,14 @@ button {
 }
 
  .btn-new {
-    top: 12%;
- }
-
- .btn-hold {
-    top: 54%;
-
+    top: 14%;
  }
 
  .btn-roll {
-    top: 47%;
+    top: 53%;
  }
+
+ .btn-hold {
+   top: 63%;
+
+}

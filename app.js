@@ -9,17 +9,34 @@ GAME RULES:
 
 */
 
-let scores = [0, 0];
-let roundScore = 0;
-let activePlayer = 0;
+
 
 //document.querySelector('#current-' + activePlayer).textContent = dice;
 
-document.querySelector('.dice').style.display = 'none';
+init();
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
     var dice = Math.floor(Math.random() * 6) + 1;
     let diceDom = document.querySelector('.dice');
     diceDom.style.display = 'block';
-    diceDom.src = 'dice-' + dice + '.png';
+    diceDom.src = '/img/dice/dice-' + dice + '.png';
 });
+
+document.querySelector('.btn-hold').addEventListener('click', function() {
+    
+});
+
+document.querySelector('.btn-new').addEventListener('click', function() {
+    init();
+});
+
+
+
+
+function init() {
+    let scores = [0, 0];
+    let roundScore = 0;
+    let activePlayer = 0;
+
+    document.querySelector('.dice').style.display = 'none';
+}

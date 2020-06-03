@@ -28,9 +28,11 @@ body {
   position: fixed;
   top: 0%;
   height: 42px;
-  width: 100%;
+  width: 90%;
+  left: 5%;
   z-index: 10;
   background-color: rgba(166, 76, 68, 0.2);
+  border-radius: 10px;
 }
 .navbar li {
   display: inline-block;
@@ -95,7 +97,7 @@ body {
 .dice {
   height: 90px;
   width: auto;
-  top: 25%;
+  top: 33%;
   position: absolute;
   border: solid 2px rgba(166, 76, 68, 0.2);
   border-radius: 5px;
@@ -107,7 +109,7 @@ body {
 
 button {
   position: absolute;
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px 10px;
   border-radius: 10px;
   background: white;
@@ -117,15 +119,15 @@ button:focus {
 }
 
 .btn-new {
-  top: 12%;
-}
-
-.btn-hold {
-  top: 54%;
+  top: 14%;
 }
 
 .btn-roll {
-  top: 47%;
+  top: 53%;
+}
+
+.btn-hold {
+  top: 63%;
 }
 
 /*# sourceMappingURL=style.css.map */

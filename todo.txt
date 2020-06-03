@@ -16,3 +16,4 @@
 - favicon cochon
 - newsletter
 - nettoyer les polices non utilisées
+- nettoyer les .scss non utilisés

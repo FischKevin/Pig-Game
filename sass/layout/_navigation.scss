@@ -5,9 +5,11 @@
     position: fixed;
     top: 0%;
     height: 42px;
-    width: 100%;
+    width: 90%;
+    left: 5%;
     z-index: 10;
     background-color: $color-light-pink;
+    border-radius: 10px;
     li {
         display: inline-block;
         padding: 10px;
