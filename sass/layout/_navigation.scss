@@ -1,0 +1,31 @@
+@import '../abstracts/variables';
+
+.navbar {
+    list-style-type: none;
+    position: fixed;
+    top: 0%;
+    height: 42px;
+    width: 100%;
+    z-index: 10;
+    background-color: $color-light-pink;
+    li {
+        display: inline-block;
+        padding: 10px;
+        &:hover{
+            background-color: $color-light-pink;
+        }
+        a {
+            text-decoration: none;
+            color: $color-dark-pink;
+            font-size: 20px;
+            padding: 20px;
+
+        }
+    }
+}
+
+
+
+
+
+

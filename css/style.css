@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/img/back/pig.jpg);
+}
+
+.nav-font {
+  font-family: "Rancho", cursive;
+}
+
+.game-font, .player-font, button {
+  font-family: "Rancho", cursive;
+}
+
+.parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar {
+  list-style-type: none;
+  position: fixed;
+  top: 0%;
+  height: 42px;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(166, 76, 68, 0.2);
+}
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+}
+.navbar li:hover {
+  background-color: rgba(166, 76, 68, 0.2);
+}
+.navbar li a {
+  text-decoration: none;
+  color: #a64c44;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+}
+.game .left, .game .right {
+  width: 50%;
+  text-align: center;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+.game .left.active, .game .right.active {
+  background-color: rgba(166, 76, 68, 0.2);
+  border-radius: 10px;
+}
+
+.player-1, .player-2 {
+  padding-top: 20px;
+  color: #a64c44;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.player-1-total-score, .player-2-total-score {
+  font-size: 40px;
+  position: relative;
+  top: 8%;
+}
+
+.player-1-round-score, .player-2-round-score {
+  font-size: 30px;
+  top: 37%;
+  /*background: $color-white-08;*/
+  /*width: 40%;*/
+  /*left: 45%;*/
+  position: relative;
+  /*border-radius: 5px;*/
+  /*border: 1px solid $color-dark-pink;*/
+  height: 40px;
+  margin: auto;
+  line-height: 35px;
+}
+
+.dice {
+  height: 90px;
+  width: auto;
+  top: 25%;
+  position: absolute;
+  border: solid 2px rgba(166, 76, 68, 0.2);
+  border-radius: 5px;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+button {
+  position: absolute;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: white;
+}
+button:focus {
+  outline: none;
+}
+
+.btn-new {
+  top: 12%;
+}
+
+.btn-hold {
+  top: 54%;
+}
+
+.btn-roll {
+  top: 47%;
+}
+
+/*# sourceMappingURL=style.css.map */

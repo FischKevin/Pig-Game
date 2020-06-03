@@ -1,0 +1,18 @@
+- gestion des langues :
+  - fr
+  - en
+- gestion des thèmes :
+  - pig
+  - autre
+  - 
+- liens réseaux sociaux :
+  - github
+  - twitter
+  - linkedin
+- multijoueur :
+  - création de compte
+  - mongodb
+  - socket.io
+- favicon cochon
+- newsletter
+- nettoyer les polices non utilisées
