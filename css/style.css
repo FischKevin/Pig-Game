@@ -97,7 +97,7 @@ body {
 .dice {
   height: 90px;
   width: auto;
-  top: 33%;
+  top: 25%;
   position: absolute;
   border: solid 2px rgba(166, 76, 68, 0.2);
   border-radius: 5px;
@@ -113,6 +113,7 @@ button {
   padding: 5px 10px;
   border-radius: 10px;
   background: white;
+  width: 142px;
 }
 button:focus {
   outline: none;
@@ -123,11 +124,11 @@ button:focus {
 }
 
 .btn-roll {
-  top: 53%;
+  top: 42%;
 }
 
 .btn-hold {
-  top: 63%;
+  top: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

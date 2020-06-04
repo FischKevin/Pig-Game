@@ -20,10 +20,15 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     let diceDom = document.querySelector('.dice');
     diceDom.style.display = 'block';
     diceDom.src = '/img/dice/dice-' + dice + '.png';
+
+
+
+
+
 });
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
-    
+
 });
 
 document.querySelector('.btn-new').addEventListener('click', function() {
@@ -39,4 +44,8 @@ function init() {
     let activePlayer = 0;
 
     document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.score-total-1').textContent = '0';
+    document.querySelector('.score-total-2').textContent = '0';
+    document.querySelector('.score-round-1').textContent = '0';
+    document.querySelector('.score-round-2').textContent = '0';
 }
