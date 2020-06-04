@@ -9,10 +9,6 @@ GAME RULES:
 
 */
 
-
-
-//document.querySelector('#current-' + activePlayer).textContent = dice;
-
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
@@ -20,22 +16,20 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     let diceDom = document.querySelector('.dice');
     diceDom.style.display = 'block';
     diceDom.src = '/img/dice/dice-' + dice + '.png';
-    console.log(activePlayer);
     // if dice value != 1 -> add dice value to round score
     if (dice != 1) {
         roundScore += dice; 
-        activePlayer = activePlayer +1 ;
+        activePlayer = activePlayer + 1;
         document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
         activePlayer = activePlayer - 1;
     // else round value = 0 and next player
     } else {
         roundScore = 0;
-        activePlayer = activePlayer +1 ;
+        activePlayer = activePlayer + 1;
         document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
         activePlayer = activePlayer - 1;
         nextPlayer();
     }
-    console.log(activePlayer);
 });
 
 function nextPlayer() {
@@ -50,7 +44,12 @@ function nextPlayer() {
 }
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
-
+    // clicking btn-hold round score become total score and nextPlayer
+    /*activePlayer = activePlayer + 1;
+    document.querySelector('.score-total-' + activePlayer).textContent = scores[activePlayer];
+    activePlayer = activePlayer - 1;
+    document.querySelector('.score-round-' + activePlayer).textContent = scores[activePlayer];*/
+    nextPlayer();
 
 });
 

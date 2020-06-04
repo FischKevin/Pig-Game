@@ -17,8 +17,9 @@
             background-color: $color-light-pink;
             border-radius: 10px;
             .player-1, .player-2 {
-                border: 2px solid $color-dark-pink;
+                box-shadow:0px 0px 0px 2px $color-dark-pink inset;
                 border-radius: 10px;
+                
             }
         }
     }
@@ -45,12 +46,7 @@
 .player-1-round-score, .player-2-round-score {
     font-size: 30px;
     top: 37%;
-    /*background: $color-white-08;*/
-    /*width: 40%;*/
-    /*left: 45%;*/
     position: relative;
-    /*border-radius: 5px;*/
-    /*border: 1px solid $color-dark-pink;*/
     height: 40px;
     margin: auto;
     line-height: 35px;

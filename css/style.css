@@ -69,7 +69,7 @@ body {
   border-radius: 10px;
 }
 .game .left.active .player-1, .game .left.active .player-2, .game .right.active .player-1, .game .right.active .player-2 {
-  border: 2px solid #a64c44;
+  box-shadow: 0px 0px 0px 2px #a64c44 inset;
   border-radius: 10px;
 }
 
@@ -91,12 +91,7 @@ body {
 .player-1-round-score, .player-2-round-score {
   font-size: 30px;
   top: 37%;
-  /*background: $color-white-08;*/
-  /*width: 40%;*/
-  /*left: 45%;*/
   position: relative;
-  /*border-radius: 5px;*/
-  /*border: 1px solid $color-dark-pink;*/
   height: 40px;
   margin: auto;
   line-height: 35px;
