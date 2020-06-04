@@ -24,6 +24,7 @@ body {
 }
 
 .navbar {
+  display: none;
   list-style-type: none;
   position: fixed;
   top: 0%;
@@ -66,12 +67,18 @@ body {
   background-color: rgba(166, 76, 68, 0.2);
   border-radius: 10px;
 }
+.game .left.active .player-1, .game .left.active player-2, .game .right.active .player-1, .game .right.active player-2 {
+  border: 2px solid #a64c44;
+  border-radius: 10px;
+}
 
 .player-1, .player-2 {
-  padding-top: 20px;
+  padding: 20px 0;
   color: #a64c44;
   font-size: 50px;
   font-weight: bold;
+  width: 50%;
+  margin: auto;
 }
 
 .player-1-total-score, .player-2-total-score {

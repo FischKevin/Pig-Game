@@ -16,18 +16,35 @@ GAME RULES:
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
-    var dice = Math.floor(Math.random() * 6) + 1;
+    let dice = Math.floor(Math.random() * 6) + 1;
     let diceDom = document.querySelector('.dice');
     diceDom.style.display = 'block';
     diceDom.src = '/img/dice/dice-' + dice + '.png';
 
-
-
-
-
+    // if dice value != 1 -> add dice value to round score
+    if (dice != 1) {
+        roundScore += dice; 
+        activePlayer = activePlayer +1 ;
+        document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
+        activePlayer = activePlayer - 1;
+    // else round value = 0 and next player
+    } else {
+        roundScore = 0;
+        activePlayer = activePlayer +1 ;
+        document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
+        activePlayer = activePlayer - 1;
+        nextPlayer();
+    }
+    
 });
 
+function nextPlayer() {
+    activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+    //document.querySelector('')
+}
+
 document.querySelector('.btn-hold').addEventListener('click', function() {
+
 
 });
 
@@ -35,13 +52,11 @@ document.querySelector('.btn-new').addEventListener('click', function() {
     init();
 });
 
-
-
-
 function init() {
-    let scores = [0, 0];
-    let roundScore = 0;
-    let activePlayer = 0;
+    scores = [0, 0];
+    roundScore = 0;
+    activePlayer = 0;
+    maxScore = 100;
 
     document.querySelector('.dice').style.display = 'none';
     document.querySelector('.score-total-1').textContent = '0';

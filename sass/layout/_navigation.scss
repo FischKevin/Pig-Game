@@ -1,6 +1,7 @@
 @import '../abstracts/variables';
 
 .navbar {
+    display: none; // to delete to make navbar visible
     list-style-type: none;
     position: fixed;
     top: 0%;

@@ -15,6 +15,10 @@
         &.active {
             background-color: $color-light-pink;
             border-radius: 10px;
+            .player-1, player-2 {
+                border: 2px solid $color-dark-pink;
+                border-radius: 10px;
+            }
         }
     }
 }
@@ -22,10 +26,12 @@
 
 
 .player-1, .player-2 {
-    padding-top: 20px;
+    padding: 20px 0;
     color: $color-dark-pink;
     font-size: 50px;
     font-weight: bold;
+    width: 50%;
+    margin: auto;
 }
 
 .player-1-total-score, .player-2-total-score {
