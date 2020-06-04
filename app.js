@@ -20,7 +20,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     let diceDom = document.querySelector('.dice');
     diceDom.style.display = 'block';
     diceDom.src = '/img/dice/dice-' + dice + '.png';
-
+    console.log(activePlayer);
     // if dice value != 1 -> add dice value to round score
     if (dice != 1) {
         roundScore += dice; 
@@ -35,12 +35,18 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         activePlayer = activePlayer - 1;
         nextPlayer();
     }
-    
+    console.log(activePlayer);
 });
 
 function nextPlayer() {
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
-    //document.querySelector('')
+    if (activePlayer === 0) {
+        document.getElementById('player-1').classList.remove('active');
+        document.getElementById('player-2').classList.add('active');
+    } else {
+        document.getElementById('player-2').classList.remove('active');
+        document.getElementById('player-1').classList.add('active');
+    }
 }
 
 document.querySelector('.btn-hold').addEventListener('click', function() {

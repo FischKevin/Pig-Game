@@ -12,10 +12,11 @@
         height: 500px;
         background-color: $color-white-08;
         border-radius: 10px;
+        padding-top: 10px;
         &.active {
             background-color: $color-light-pink;
             border-radius: 10px;
-            .player-1, player-2 {
+            .player-1, .player-2 {
                 border: 2px solid $color-dark-pink;
                 border-radius: 10px;
             }
@@ -26,7 +27,7 @@
 
 
 .player-1, .player-2 {
-    padding: 20px 0;
+    padding: 10px 0;
     color: $color-dark-pink;
     font-size: 50px;
     font-weight: bold;

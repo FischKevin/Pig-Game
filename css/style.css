@@ -32,7 +32,7 @@ body {
   width: 90%;
   left: 5%;
   z-index: 10;
-  background-color: rgba(166, 76, 68, 0.2);
+  background-color: rgba(166, 76, 68, 0.3);
   border-radius: 10px;
 }
 .navbar li {
@@ -40,7 +40,7 @@ body {
   padding: 10px;
 }
 .navbar li:hover {
-  background-color: rgba(166, 76, 68, 0.2);
+  background-color: rgba(166, 76, 68, 0.3);
 }
 .navbar li a {
   text-decoration: none;
@@ -62,18 +62,19 @@ body {
   height: 500px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+  padding-top: 10px;
 }
 .game .left.active, .game .right.active {
-  background-color: rgba(166, 76, 68, 0.2);
+  background-color: rgba(166, 76, 68, 0.3);
   border-radius: 10px;
 }
-.game .left.active .player-1, .game .left.active player-2, .game .right.active .player-1, .game .right.active player-2 {
+.game .left.active .player-1, .game .left.active .player-2, .game .right.active .player-1, .game .right.active .player-2 {
   border: 2px solid #a64c44;
   border-radius: 10px;
 }
 
 .player-1, .player-2 {
-  padding: 20px 0;
+  padding: 10px 0;
   color: #a64c44;
   font-size: 50px;
   font-weight: bold;
@@ -106,7 +107,7 @@ body {
   width: auto;
   top: 25%;
   position: absolute;
-  border: solid 2px rgba(166, 76, 68, 0.2);
+  border: solid 2px rgba(166, 76, 68, 0.3);
   border-radius: 5px;
 }
 
