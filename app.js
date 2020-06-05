@@ -1,3 +1,30 @@
+/*
+TO DO :
+- if (score[activePlayer]) >= maxscore {
+    print winner instead of player name
+    btn-roll.style.display = "none";
+} else {
+        if (dice != 1) {
+        roundScore += dice; 
+        document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
+    // else round value = 0 and next player
+    } else {
+        nextPlayer();
+    }
+}
+- event onclick btn-hold
+if (roundScore = 0) {
+    print message "you must roll the dice"
+} else {
+    scores[activePlayer] += roundScore;
+    document.querySelector('.score-total-' + activePlayer).textContent = scores[activePlayer];
+
+    nextPlayer();
+}
+
+
+*/
+
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
