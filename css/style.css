@@ -64,16 +64,16 @@ body {
   border-radius: 10px;
   padding-top: 10px;
 }
-.game .left.active, .game .right.active {
+.game .active {
   background-color: rgba(166, 76, 68, 0.3);
   border-radius: 10px;
 }
-.game .left.active .player-1, .game .left.active .player-2, .game .right.active .player-1, .game .right.active .player-2 {
+.game .active .player-0, .game .active .player-1 {
   box-shadow: 0px 0px 0px 2px #a64c44 inset;
   border-radius: 10px;
 }
 
-.player-1, .player-2 {
+.player-0, .player-1 {
   padding: 10px 0;
   color: #a64c44;
   font-size: 50px;
@@ -82,13 +82,13 @@ body {
   margin: auto;
 }
 
-.player-1-total-score, .player-2-total-score {
+.player-0-total-score, .player-1-total-score {
   font-size: 40px;
   position: relative;
   top: 8%;
 }
 
-.player-1-round-score, .player-2-round-score {
+.player-0-round-score, .player-1-round-score {
   font-size: 30px;
   top: 37%;
   position: relative;
