@@ -53,6 +53,8 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
             document.querySelector('.btn-hold').style.display = 'none';
             document.querySelector('.dice').style.display = 'none';
 
+            document.querySelector('.player-' + activePlayer).textContent = 'Winner';
+
         } else {
             nextPlayer();
         }
@@ -77,4 +79,6 @@ function init() {
     document.getElementById('player-0').classList.add('active');
     document.querySelector('.btn-roll').style.display = 'block';
     document.querySelector('.btn-hold').style.display = 'block';
+    document.querySelector('.player-0').textContent = 'Player 1';
+    document.querySelector('.player-1').textContent = 'Player 2';
 }
