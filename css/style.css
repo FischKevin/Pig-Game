@@ -110,6 +110,14 @@ body {
   margin-right: 10px;
 }
 
+.message {
+  position: absolute;
+  top: 180px;
+  color: #a64c44;
+  font-size: 30px;
+  display: none;
+}
+
 button {
   position: absolute;
   font-size: 20px;

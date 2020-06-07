@@ -61,3 +61,11 @@
 .fas {
     margin-right: 10px;
 }
+
+.message {
+    position: absolute;
+    top: 180px;
+    color: $color-dark-pink;
+    font-size: 30px;
+    display: none;
+}

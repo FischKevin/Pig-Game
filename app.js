@@ -1,34 +1,21 @@
-/*
-TO DO :
-- event onclick btn-hold
-if (roundScore = 0) {
-    print message "you must roll the dice"
-} else {
-    scores[activePlayer] += roundScore;
-    document.querySelector('.score-total-' + activePlayer).textContent = scores[activePlayer];
-
-    nextPlayer();
-}
-
-
-*/
-
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
-    console.log(scores[activePlayer]);
-        let dice = Math.floor(Math.random() * 6) + 1;
-        let diceDom = document.querySelector('.dice');
-        diceDom.style.display = 'block';
-        diceDom.src = '/img/dice/dice-' + dice + '.png';
-        // if dice value != 1 -> add dice value to round score
-        if (dice != 1) {
-            roundScore += dice; 
-            document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
-        // else round value = 0 and next player
-        } else {
-            nextPlayer();
-        }
+    document.querySelector('.message').style.display = 'none';
+    let dice = Math.floor(Math.random() * 6) + 1;
+    let diceDom = document.querySelector('.dice');
+    diceDom.style.display = 'block';
+    diceDom.src = '/img/dice/dice-' + dice + '.png';
+    // if dice value != 1 -> add dice value to round score
+    if (dice != 1) {
+        roundScore += dice; 
+        document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
+    // else round value = 0 and next player
+    } else {
+        document.querySelector('.message').textContent = '1 ! Round score = 0 !';
+        document.querySelector('.message').style.display = 'block';
+        nextPlayer();
+    }
 });
 
 function nextPlayer() {
@@ -39,27 +26,35 @@ function nextPlayer() {
 
     document.querySelector('#player-0').classList.toggle('active');
     document.querySelector('#player-1').classList.toggle('active');
-
 }
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
-    
-    if (scores[activePlayer] < maxScore) {
-        scores[activePlayer] += roundScore;
-        document.querySelector('.score-total-' + activePlayer).textContent = scores[activePlayer];
-    
-        if (scores[activePlayer] >= maxScore) {
-            document.querySelector('.btn-roll').style.display = 'none';
-            document.querySelector('.btn-hold').style.display = 'none';
-            document.querySelector('.dice').style.display = 'none';
 
-            document.querySelector('.player-' + activePlayer).textContent = 'Winner';
+    if (roundScore === 0) {
+        document.querySelector('.message').textContent = 'You must roll the dice';
+        document.querySelector('.message').style.display = 'block';
 
         } else {
-            nextPlayer();
-        }
-    }   
+            if (scores[activePlayer] < maxScore) {
+                console.log(scores[activePlayer]);
+                console.log(maxScore);
+                console.log(roundScore);
+                scores[activePlayer] += roundScore;
 
+                document.querySelector('.score-total-' + activePlayer).textContent = scores[activePlayer];
+            
+                if (scores[activePlayer] >= maxScore) {
+                    document.querySelector('.btn-roll').style.display = 'none';
+                    document.querySelector('.btn-hold').style.display = 'none';
+                    document.querySelector('.dice').style.display = 'none';
+        
+                    document.querySelector('.player-' + activePlayer).textContent = 'Winner';
+        
+                } else {
+                    nextPlayer();
+                }
+       }
+    }
 });
 
 document.querySelector('.btn-new').addEventListener('click', init);
