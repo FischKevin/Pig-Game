@@ -48,9 +48,6 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
         } else {
             if (scores[activePlayer] < maxScore) {
-                console.log(scores[activePlayer]);
-                console.log(maxScore);
-                console.log(roundScore);
                 scores[activePlayer] += roundScore;
 
                 document.querySelector('.score-total-' + activePlayer).textContent = scores[activePlayer];
