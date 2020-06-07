@@ -1,3 +1,15 @@
+/*TO DO :
+- add navbar
+- overlay to display rules by clicking in the navbar
+- feature to change css theme
+
+- add other rules
+  - double 6 : loses toundScore + score[activePlayer] = 0 + nextplayer
+  - 2 dices : 1 : lose roundScore + nextPlayer
+  - ...
+
+
+*/
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
@@ -52,7 +64,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         
                 } else {
                     nextPlayer();
-                }
+            }
        }
     }
 });
@@ -63,7 +75,7 @@ function init() {
     scores = [0, 0];
     roundScore = 0;
     activePlayer = 0;
-    maxScore = 20;
+    maxScore = 100;
 
     document.querySelector('.dice').style.display = 'none';
     document.querySelector('.score-total-0').textContent = '0';
