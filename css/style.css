@@ -12,7 +12,7 @@ body {
   font-family: "Rancho", cursive;
 }
 
-.game-font, .player-font, button {
+.game-font, .player-font, button, .credits, .rules, .overlay-rules, .overlay-credits {
   font-family: "Rancho", cursive;
 }
 
@@ -41,6 +41,8 @@ body {
 }
 .navbar li:hover {
   background-color: rgba(166, 76, 68, 0.3);
+  border-radius: 10px;
+  height: 42px;
 }
 .navbar li a {
   text-decoration: none;
@@ -49,18 +51,61 @@ body {
   padding: 20px;
 }
 
+header {
+  height: 200px;
+  background-color: rgba(166, 76, 68, 0.3);
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+header .logo {
+  font-family: "Rancho", cursive;
+  font-size: 100px;
+  color: #a64c44;
+  text-align: center;
+}
+header .github, header .twitter {
+  position: fixed;
+  font-size: 50px;
+  right: 80px;
+}
+header .github {
+  top: 15px;
+}
+header .twitter {
+  top: 68px;
+}
+header a {
+  color: #a64c44;
+}
+header .rules, header .credits {
+  position: fixed;
+  right: 80px;
+  font-size: 30px;
+  color: #a64c44;
+  cursor: pointer;
+}
+header .rules {
+  top: 128px;
+}
+header .credits {
+  top: 170px;
+}
+
 .game {
   display: flex;
   justify-content: space-around;
   width: 90%;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 .game .left, .game .right {
   width: 50%;
   text-align: center;
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   padding-top: 10px;
 }
@@ -100,7 +145,7 @@ body {
 .dice {
   height: 90px;
   width: auto;
-  top: 300px;
+  top: 420px;
   position: absolute;
   border: solid 2px rgba(166, 76, 68, 0.3);
   border-radius: 5px;
@@ -118,6 +163,29 @@ body {
   display: none;
 }
 
+.overlay-rules, .overlay-credits {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 70%;
+  /* Full width (cover the whole page) */
+  height: auto;
+  /* Full height (cover the whole page) */
+  top: 150px;
+  left: 15%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  list-style: inside;
+}
+
 button {
   position: absolute;
   font-size: 20px;
@@ -131,15 +199,15 @@ button:focus {
 }
 
 .btn-new {
-  top: 90px;
+  top: 260px;
 }
 
 .btn-roll {
-  top: 430px;
+  top: 560px;
 }
 
 .btn-hold {
-  top: 500px;
+  top: 625px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+@import '../abstracts/variables';
+
+header {
+    height: 200px;
+    background-color: $color-light-pink;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    .logo {
+        font-family: $font-test1 ;
+        font-size: 100px;
+        color: $color-dark-pink;
+        text-align: center;
+    }
+    .github, .twitter {
+        position: fixed;
+        font-size: 50px;
+        right: 80px;
+    }
+    .github{  
+        top: 15px;
+    }
+    .twitter{  
+        top: 68px;
+    }
+    a {
+        color: $color-dark-pink;  
+    }
+    .rules, .credits{
+        position: fixed;
+        right: 80px;
+        font-size: 30px;
+        color: $color-dark-pink;
+        cursor: pointer;
+    }
+    .rules {
+        top: 128px;
+    }
+    .credits {
+        top: 170px;
+    }
+}

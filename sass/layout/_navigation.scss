@@ -16,6 +16,8 @@
         padding: 10px;
         &:hover{
             background-color: $color-light-pink;
+            border-radius: 10px;
+            height: 42px;
         }
         a {
             text-decoration: none;

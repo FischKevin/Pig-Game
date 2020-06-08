@@ -1,0 +1,19 @@
+@import '../abstracts/variables';
+
+.overlay-rules, .overlay-credits {
+        position: fixed; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 70%; /* Full width (cover the whole page) */
+        height: auto; /* Full height (cover the whole page) */
+        top: 150px;
+        left: 15%;
+        background-color: rgba(255, 255, 255, 0.8); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+        list-style: inside;
+
+
+}

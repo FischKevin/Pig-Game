@@ -8,14 +8,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Balsamiq+Sans&family=Roboto&family=Ropa+Sans&display=swap" rel="stylesheet">
 </head>
 <body class="parallax">
-    <nav class="navbar nav-font">
+    <!--<nav class="navbar nav-font">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Rules</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Credits</a></li>
         </ul>
-    </nav>
+    </nav>-->
+    <header>
+        <div class="logo">Pig game</div>
+        <div class="github"><a href="https://github.com/FischKevin" target="_blank"><i class="fab fa-github-square"></i></a></div>
+        <div class="twitter"><a href="https://twitter.com/FischKev1" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
+        <div class="rules" onclick="overlayRulesOn()">Rules</div>
+        <div class="credits" onclick="overlayCreditsOn()">Credits</div>
+    </header>
+    <div class="overlay">
+        <div class="overlay-rules" onclick="overlayRulesOff()">
+            Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+            <ul>
+                <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+            </ul>
+            The first player to score 100 or more points wins.
+        </div>
+        <div class="overlay-credits" onclick="overlayCreditsOff()">
+            Photo by <a href="https://unsplash.com/@blankerwahnsinn" target="_blank">Fabian Blank on Unsplash</a>
+        </div>
+    </div>
+
     <div class="game game-font">
         <div class="left active" id="player-0">
             <div class="player-0 player-font">Player 1</div>

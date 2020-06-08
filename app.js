@@ -1,6 +1,4 @@
 /*TO DO :
-- add navbar
-- overlay to display rules by clicking in the navbar
 - feature to change css theme
 
 - add other rules
@@ -86,3 +84,19 @@ function init() {
     document.querySelector('.player-0').textContent = 'Player 1';
     document.querySelector('.player-1').textContent = 'Player 2';
 }
+
+function overlayRulesOn() {
+    document.querySelector(".overlay-rules").style.display = "block";
+  }
+  
+  function overlayRulesOff() {
+    document.querySelector(".overlay-rules").style.display = "none";
+  }
+
+  function overlayCreditsOn() {
+    document.querySelector(".overlay-credits").style.display = "block";
+  }
+  
+  function overlayCreditsOff() {
+    document.querySelector(".overlay-credits").style.display = "none";
+  }
