@@ -83,6 +83,7 @@ function init() {
     document.querySelector('.btn-hold').style.display = 'block';
     document.querySelector('.player-0').textContent = 'Player 1';
     document.querySelector('.player-1').textContent = 'Player 2';
+    document.querySelector('.message').style.display = 'none';
 }
 
 function overlayRulesOn() {
