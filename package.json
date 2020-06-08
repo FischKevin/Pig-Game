@@ -4,6 +4,7 @@
   "description": "new version of pig game with more game modes and UI",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./sass/main.scss ./css/style.css"
   },
