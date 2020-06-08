@@ -22,7 +22,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.querySelector('.score-round-' + activePlayer).textContent = roundScore;
     // else round value = 0 and next player
     } else {
-        document.querySelector('.message').textContent = '1 ! Round score = 0 !';
+        document.querySelector('.message').textContent = '1 ! Next player !';
         document.querySelector('.message').style.display = 'block';
         nextPlayer();
     }

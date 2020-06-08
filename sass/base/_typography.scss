@@ -5,10 +5,12 @@
     font-family: $font-test1;
 }
 
-.game-font, .player-font, button, .credits, .rules, .overlay-rules, .overlay-credits {
+.game-font, .player-font, button, .credits, .rules {
     font-family: $font-test1;
 }
 
-
+.overlay-rules, .overlay-credits {
+    font-family: $font-main;
+}
 
 

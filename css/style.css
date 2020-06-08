@@ -12,8 +12,12 @@ body {
   font-family: "Rancho", cursive;
 }
 
-.game-font, .player-font, button, .credits, .rules, .overlay-rules, .overlay-credits {
+.game-font, .player-font, button, .credits, .rules {
   font-family: "Rancho", cursive;
+}
+
+.overlay-rules, .overlay-credits {
+  font-family: "Roboto", sans-serif;
 }
 
 .parallax {
@@ -157,10 +161,13 @@ header .credits {
 
 .message {
   position: absolute;
-  top: 180px;
+  top: 320px;
   color: #a64c44;
-  font-size: 30px;
+  font-size: 40px;
   display: none;
+  border: 2px dotted #a64c44;
+  border-radius: 10px;
+  padding: 0 20px;
 }
 
 .overlay-rules, .overlay-credits {
