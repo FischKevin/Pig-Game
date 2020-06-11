@@ -17,7 +17,7 @@ header {
     .github, .twitter {
         position: fixed;
         font-size: 50px;
-        right: 80px;
+        right: 6%;
     }
     .github{  
         top: 15px;
@@ -30,7 +30,7 @@ header {
     }
     .rules, .credits{
         position: fixed;
-        right: 80px;
+        right: 6%;
         font-size: 30px;
         color: $color-dark-pink;
         cursor: pointer;

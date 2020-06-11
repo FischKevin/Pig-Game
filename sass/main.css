@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -39,15 +40,18 @@ body {
   background-color: rgba(166, 76, 68, 0.3);
   border-radius: 10px;
 }
+
 .navbar li {
   display: inline-block;
   padding: 10px;
 }
+
 .navbar li:hover {
   background-color: rgba(166, 76, 68, 0.3);
   border-radius: 10px;
   height: 42px;
 }
+
 .navbar li a {
   text-decoration: none;
   color: #a64c44;
@@ -64,26 +68,32 @@ header {
   margin-top: 10px;
   padding-top: 20px;
 }
+
 header .logo {
   font-family: "Rancho", cursive;
   font-size: 100px;
   color: #a64c44;
   text-align: center;
 }
+
 header .github, header .twitter {
   position: fixed;
   font-size: 50px;
   right: 6%;
 }
+
 header .github {
   top: 15px;
 }
+
 header .twitter {
   top: 68px;
 }
+
 header a {
   color: #a64c44;
 }
+
 header .rules, header .credits {
   position: fixed;
   right: 6%;
@@ -91,20 +101,26 @@ header .rules, header .credits {
   color: #a64c44;
   cursor: pointer;
 }
+
 header .rules {
   top: 128px;
 }
+
 header .credits {
   top: 170px;
 }
 
 .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 90%;
   margin: auto;
   margin-top: 10px;
 }
+
 .game .left, .game .right {
   width: 50%;
   text-align: center;
@@ -113,12 +129,15 @@ header .credits {
   border-radius: 10px;
   padding-top: 10px;
 }
+
 .game .active {
   background-color: rgba(166, 76, 68, 0.3);
   border-radius: 10px;
 }
+
 .game .active .player-0, .game .active .player-1 {
-  box-shadow: 0px 0px 0px 2px #a64c44 inset;
+  -webkit-box-shadow: 0px 0px 0px 2px #a64c44 inset;
+          box-shadow: 0px 0px 0px 2px #a64c44 inset;
   border-radius: 10px;
 }
 
@@ -201,6 +220,7 @@ button {
   background: white;
   width: 142px;
 }
+
 button:focus {
   outline: none;
 }
@@ -216,5 +236,4 @@ button:focus {
 .btn-hold {
   top: 625px;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
